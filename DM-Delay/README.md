@@ -1,69 +1,108 @@
-# React + TypeScript + Vite
+# 📨 Delayed Message Sender App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet practical React + TypeScript app that lets users schedule a message to be sent after a delay — with an option to cancel before it goes out.
 
-Currently, two official plugins are available:
+This project is part of the **30 Apps in 30 Days Challenge** by [@codejavid](https://linkedin.com/in/codejavid), Founder of [StozAcademy](https://www.youtube.com/@stozacademy).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Type a message and specify a delay time
+- Message is sent after the delay using `setTimeout()`
+- Cancel the message before it's sent with `clearTimeout()`
+- Real-world UX design with "Undo" logic
+- Clean, responsive UI with TailwindCSS and ShadCN
+- Works smoothly on both desktop and mobile
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧠 What I Learned
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- How `setTimeout()` and `clearTimeout()` work in React
+- Using `useState` for dynamic delay, message, and timer logic
+- Conditional rendering: toggling between "Send" and "Cancel"
+- Thoughtful UI building using **TailwindCSS + ShadCN UI**
+- Component and page-level structuring in a React project
+- Real-world UX thinking with cancelation & loading feedback
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React + Vite (TypeScript)
+- 🎨 Tailwind CSS
+- 🧩 ShadCN UI Components
+
+---
+
+## 🧪 My Improvements
+
+As part of my learning, I made several enhancements beyond the base challenge:
+- 📱 Improved UI responsiveness for mobile and desktop
+- ⏳ Added loading animation and visual feedback while sending
+- 🎨 Polished the overall user experience with subtle UI tweaks
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher recommended)
+- npm / yarn / pnpm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/delayed-message-sender.git
+cd delayed-message-sender
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+Now visit [http://localhost:5173](http://localhost:5173) to view the app in your browser.
+
+---
+
+## 📁 Project Structure
+
+
+```txt
+src/
+├── components/
+│   └── MessageForm.tsx
+├── pages/
+│   └── Home.tsx
+├── App.tsx
+├── main.tsx
+├── index.css
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📌 Part of
+
+This app is **Day 1** of the **#30Apps30Days** challenge.  
+Stay tuned as I build 29 more powerful and creative apps from scratch.
+
+---
+
+## 🙌 Special Thanks
+
+Huge thanks to **[@codejavid](https://linkedin.com/in/codejavid)** and the **StozAcademy** community for inspiring this challenge.
+
+Follow the full journey and subscribe to the [YouTube Channel](https://www.youtube.com/@stozacademy) to learn along.
+
+---
+
+## 📄 License
+
+This project is open source and available under the **MIT License**.
