@@ -64,8 +64,8 @@ Follow these steps to run the project locally:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/moodmail.git
-cd moodmail
+git clone https://github.com/r-madhan-1306/mood-mail.git
+cd mood-mail
 ```
 
 ### 2. Install dependencies
