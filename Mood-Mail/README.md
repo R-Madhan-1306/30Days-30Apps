@@ -87,7 +87,7 @@ Now open your browser and go to:
 
 ## 🧑‍💻 Author
 
-Built by [@r-madhan-1306](https://github.com/r-madhan-1306) as part of the **30 Apps in 30 Days Challenge**.  
+Built by [@r-madhan-1306](https://github.com/r-madhan-1306) as part of the **30 Apps in 30 Days Challenge (Day - 2)**.  
 Inspired by [@codejavid](https://twitter.com/codejavid) and the **StozAcademy** community.
 
 ---
