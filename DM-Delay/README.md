@@ -56,8 +56,8 @@ As part of my learning, I made several enhancements beyond the base challenge:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/delayed-message-sender.git
-cd delayed-message-sender
+git clone https://github.com/r-madhan-1306/dm-delay.git
+cd dm-delay
 
 # Install dependencies
 npm install
